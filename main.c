@@ -4,19 +4,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int c; //char으로 잡아도 문제 없음 
-	int num;
+	int a;
+	int sum=0;
+	int i;
 	
-	num=0;
+	printf("input a number:");
+	scanf("%d",&a);
 	
-	printf("input a string:");
-	
-	while((c=getchar()) != '\n')
+	for(i=0;i<=a;i++)
 	{
-		if (c>='0' && c<='9') //'0'<= c<= '9'은 문법적으로 틀림 
-			num= num+1;
+		sum+=i;
 	}
-			
-	printf("%d",num);
+	
+	printf("%d",sum);
 	return 0;
 }
