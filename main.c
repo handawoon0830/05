@@ -6,14 +6,12 @@
 int main(int argc, char *argv[]) {
 	int a;
 	
-	printf("input the number:");
+	printf("enter the number:");
 	scanf("%d",&a);
 	
-	if (a>0)
-		printf("양수입니다");
-	else if (a<0)
-		printf("음수입니다");
-	else
-		printf("0입니다");
+	if (a>=0)
+		printf("%d",a);
+	else if (a<0);
+		printf("%d",-a); 
 	return 0;
 }
